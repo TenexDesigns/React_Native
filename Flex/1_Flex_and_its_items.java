@@ -75,6 +75,22 @@ const styles = StyleSheet.create({
   <View />
 </View>
 
+
+  7.alignSelf:
+
+What it does: alignSelf allows you to override the "align-items" property for a specific child component. It determines how a particular child should align itself within the cross-axis.
+Applications/Use Cases:
+Fine-tuning alignment: Use "alignSelf" when you want a specific child to be aligned differently from the others within the same container.
+Code Sample:
+jsx
+Copy code
+<View style={{ flexDirection: 'column', alignItems: 'center' }}>
+  <View style={{ width: 50, height: 50, backgroundColor: 'red', alignSelf: 'flex-start' }} />
+  <View style={{ width: 50, height: 50, backgroundColor: 'blue', alignSelf: 'center' }} />
+  <View style={{ width: 50, height: 50, backgroundColor: 'green', alignSelf: 'flex-end' }} />
+</View>
+In this example, the "alignSelf" property is used to align each child component differently within the column.
+
 In this example, if there is not enough horizontal space, the flex items will wrap onto the next line.
 
 These flexbox properties provide a flexible and efficient way to create responsive layouts in React Native. They allow you to control the arrangement, alignment, and size of your components based on the available space.
