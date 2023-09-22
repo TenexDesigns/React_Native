@@ -1,4 +1,7 @@
 The `Image` component in React Native is used for displaying various types of images, including network images, static resources, temporary local images, and images from local disk storage. Here's a breakdown of the important areas and props related to the `Image` component, along with some code samples:
+You have to set the height and with of all images for them t be dislayed well.
+
+
 
 1. **Basic Usage:**
 
