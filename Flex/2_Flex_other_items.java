@@ -1,3 +1,27 @@
+Default flexDirection in React Native:
+
+The default value of flexDirection in React Native is 'column'. This means that, by default, flex items are laid out vertically from top to bottom within their container.
+By Default , in react native, flex is flex-colum
+
+
+      ---------------------> Cross axix
+      |   items
+      |   items
+      |   items
+      |   items
+      |   items
+      |
+      V main axix 
+
+
+
+
+
+
+
+
+
+
 **Align content**
 
 The `alignContent` property controls how the lines of boxes are aligned within the container along the cross axis. It can be set to `flex-start`, `flex-end`, `center`, `space-around`, or `space-between`.
