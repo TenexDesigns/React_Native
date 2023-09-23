@@ -1,3 +1,22 @@
+Default flexDirection in React Native:
+
+The default value of flexDirection in React Native is 'column'. This means that, by default, flex items are laid out vertically from top to bottom within their container.
+By Default , in react native, flex is flex-colum
+
+
+      ---------------------> Cross axix
+      |   items
+      |   items
+      |   items
+      |   items
+      |   items
+      |
+      V main axix 
+
+
+
+  
+
 In React Native, flexbox is a powerful layout system that allows you to create flexible and responsive UI designs. The following concepts are commonly used in flexbox layouts:
 
 1. **Flex**: The `flex` property defines how items are going to fill the available space along the main axis. It determines the proportion of space that each item will occupy. The larger the flex value, the more space the item will take. For example:
