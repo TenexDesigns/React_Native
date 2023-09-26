@@ -1,5 +1,22 @@
 
 
+Steps
+
+1.npx create-expo-app@latest books --example with-router
+
+2.npx expo install expo-router react-native-safe-area-context react-native-screens expo-linking expo-constants expo-status-bar react-native-gesture-handler
+
+
+
+
+
+
+
+
+
+
+----------------------------------------------------------
+
 1.React Native Elements:
 React Native Elements is a UI toolkit that offers pre-designed components like buttons, cards, and input fields. It can help you quickly build a consistent and attractive UI.
 
