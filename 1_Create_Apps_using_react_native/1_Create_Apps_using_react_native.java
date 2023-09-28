@@ -3,12 +3,18 @@ Building apps with vanilla React Native involves several steps, from setting up 
 **1. Set Up Your Development Environment**
 Before you can start building your app, you need to set up your development environment. This involves installing Node.js, the React Native command line interface, a JDK, and Android Studio[^2^].
 - Install Node.js and npm (Node.js package manager). You can download Node.js from the [official website](https://nodejs.org/en/download/) and npm is included in the Node.js installation.
-- Install the React Native command line interface by running `npm install -g react-native-cli` in your terminal[^2^].
+- Install the React Native command line interface by
+  
+  running "--------->`npm install -g react-native-cli`<------------" in your terminal[^2^].
+  
 - Install a JDK (Java Development Kit) from the [official Oracle website](https://www.oracle.com/java/technologies/javase-jdk11-downloads.html).
 - Install Android Studio for building your app and testing it on an Android emulator. You can download it from the [official website](https://developer.android.com/studio) and follow the instructions there to install it[^2^].
 
 **2. Create a New React Native App**
-- To create a new React Native project, navigate to the directory where you want to create the project and run `react-native init YourAppName`. Replace `YourAppName` with your desired app name[^7^].
+- To create a new React Native project, navigate to the directory where you want to create the project and 
+                                                                          
+    run "-------> `react-native init YourAppName`<--------".Replace `YourAppName` with your desired app name[^7^].
+                                                                          
 - This will create a new directory with your app name, with all the necessary files and directories for a basic React Native app[^7^].
 
 **3. Run Your React Native App**
