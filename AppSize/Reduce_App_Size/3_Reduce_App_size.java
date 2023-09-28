@@ -23,3 +23,52 @@ Here are some tips on how to reduce the app size of your Expo React Native app:
 * **Use a smaller build system.** Metro is the default build system for Expo React Native apps. However, there are other build systems, such as Webpack, that may be smaller and faster.
 
 By following these tips, you can reduce the size of your Expo React Native app and make it faster to load and run.
+
+
+
+
+
+
+
+
+  To reduce app size using dynamic imports, you can use the `import()` function to dynamically load modules or components when they are needed. This is a good way to reduce the initial bundle size of your app, especially if you have a large app with multiple screens or features.
+
+For example, the following code shows how to use dynamic imports to load a component only when it is needed:
+
+```javascript
+import React from 'react';
+import { View, Text } from 'react-native';
+
+const MyComponent = () => {
+  // ...
+};
+
+const MyScreen = () => {
+  const [showComponent, setShowComponent] = useState(false);
+
+  const toggleComponent = () => {
+    setShowComponent(!showComponent);
+  };
+
+  return (
+    <View>
+      <Button title="Toggle Component" onPress={toggleComponent} />
+      {showComponent && import('./MyComponent').then(({ default: MyComponent }) => (
+        <MyComponent />
+      ))}
+    </View>
+  );
+};
+```
+
+In this example, the `MyComponent` component is only imported when the user clicks the "Toggle Component" button. This can help reduce the initial bundle size of the app, especially if the `MyComponent` component is large.
+
+To use code splitting, you can use a tool like Webpack or Parcel to split your code into multiple bundles, which can be loaded on demand. This is a good way to reduce the initial bundle size of your app, especially if you have a large app with multiple screens or features.
+
+For example, you can split your code into separate bundles for different screens or features. Then, you can use dynamic imports to load the bundles only when they are needed.
+
+To analyze your app's bundle and identify large modules or assets that can be optimized, you can use tools like `react-native-bundle-analyzer` and `expo-bundle-tracker`. These tools can help you identify which modules and assets are taking up the most space in your app's bundle. Once you have identified the large modules and assets, you can take steps to optimize them.
+
+For example, you can remove unused modules, optimize your images, and use smaller font libraries.
+
+By following these tips, you can reduce the size of your React Native app and make it faster to load and run.
